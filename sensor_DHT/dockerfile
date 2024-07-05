@@ -1,9 +1,0 @@
-FROM python:3.7-slim
-
-WORKDIR /app
-
-COPY . /app
-
-RUN pip install paho-mqtt adafruit-blinka
-
-CMD ["python", "./pub_DHT_json.py"]
